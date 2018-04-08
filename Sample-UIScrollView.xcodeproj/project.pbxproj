@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E1E391F3207A5A0F00AB3908 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E391F2207A5A0F00AB3908 /* AppDelegate.swift */; };
+		E1E391F5207A5A0F00AB3908 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E391F4207A5A0F00AB3908 /* ViewController.swift */; };
+		E1E391F8207A5A0F00AB3908 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1E391F6207A5A0F00AB3908 /* Main.storyboard */; };
+		E1E391FA207A5A0F00AB3908 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1E391F9207A5A0F00AB3908 /* Assets.xcassets */; };
+		E1E391FD207A5A0F00AB3908 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1E391FB207A5A0F00AB3908 /* LaunchScreen.storyboard */; };
+		E1E39208207A5A0F00AB3908 /* Sample_UIScrollViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E39207207A5A0F00AB3908 /* Sample_UIScrollViewTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E1E39204207A5A0F00AB3908 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1E391E7207A5A0E00AB3908 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1E391EE207A5A0F00AB3908;
+			remoteInfo = "Sample-UIScrollView";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E1E391EF207A5A0F00AB3908 /* Sample-UIScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample-UIScrollView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1E391F2207A5A0F00AB3908 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E1E391F4207A5A0F00AB3908 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E1E391F7207A5A0F00AB3908 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E1E391F9207A5A0F00AB3908 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E1E391FC207A5A0F00AB3908 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E1E391FE207A5A0F00AB3908 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1E39203207A5A0F00AB3908 /* Sample-UIScrollViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sample-UIScrollViewTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1E39207207A5A0F00AB3908 /* Sample_UIScrollViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample_UIScrollViewTests.swift; sourceTree = "<group>"; };
+		E1E39209207A5A0F00AB3908 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E1E391EC207A5A0F00AB3908 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1E39200207A5A0F00AB3908 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E1E391E6207A5A0E00AB3908 = {
+			isa = PBXGroup;
+			children = (
+				E1E391F1207A5A0F00AB3908 /* Sample-UIScrollView */,
+				E1E39206207A5A0F00AB3908 /* Sample-UIScrollViewTests */,
+				E1E391F0207A5A0F00AB3908 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E1E391F0207A5A0F00AB3908 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1E391EF207A5A0F00AB3908 /* Sample-UIScrollView.app */,
+				E1E39203207A5A0F00AB3908 /* Sample-UIScrollViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1E391F1207A5A0F00AB3908 /* Sample-UIScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				E1E391F2207A5A0F00AB3908 /* AppDelegate.swift */,
+				E1E391F4207A5A0F00AB3908 /* ViewController.swift */,
+				E1E391F6207A5A0F00AB3908 /* Main.storyboard */,
+				E1E391F9207A5A0F00AB3908 /* Assets.xcassets */,
+				E1E391FB207A5A0F00AB3908 /* LaunchScreen.storyboard */,
+				E1E391FE207A5A0F00AB3908 /* Info.plist */,
+			);
+			path = "Sample-UIScrollView";
+			sourceTree = "<group>";
+		};
+		E1E39206207A5A0F00AB3908 /* Sample-UIScrollViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				E1E39207207A5A0F00AB3908 /* Sample_UIScrollViewTests.swift */,
+				E1E39209207A5A0F00AB3908 /* Info.plist */,
+			);
+			path = "Sample-UIScrollViewTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E1E391EE207A5A0F00AB3908 /* Sample-UIScrollView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1E3920C207A5A0F00AB3908 /* Build configuration list for PBXNativeTarget "Sample-UIScrollView" */;
+			buildPhases = (
+				E1E391EB207A5A0F00AB3908 /* Sources */,
+				E1E391EC207A5A0F00AB3908 /* Frameworks */,
+				E1E391ED207A5A0F00AB3908 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sample-UIScrollView";
+			productName = "Sample-UIScrollView";
+			productReference = E1E391EF207A5A0F00AB3908 /* Sample-UIScrollView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E1E39202207A5A0F00AB3908 /* Sample-UIScrollViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1E3920F207A5A0F00AB3908 /* Build configuration list for PBXNativeTarget "Sample-UIScrollViewTests" */;
+			buildPhases = (
+				E1E391FF207A5A0F00AB3908 /* Sources */,
+				E1E39200207A5A0F00AB3908 /* Frameworks */,
+				E1E39201207A5A0F00AB3908 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1E39205207A5A0F00AB3908 /* PBXTargetDependency */,
+			);
+			name = "Sample-UIScrollViewTests";
+			productName = "Sample-UIScrollViewTests";
+			productReference = E1E39203207A5A0F00AB3908 /* Sample-UIScrollViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E1E391E7207A5A0E00AB3908 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Kohey;
+				TargetAttributes = {
+					E1E391EE207A5A0F00AB3908 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					E1E39202207A5A0F00AB3908 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E1E391EE207A5A0F00AB3908;
+					};
+				};
+			};
+			buildConfigurationList = E1E391EA207A5A0E00AB3908 /* Build configuration list for PBXProject "Sample-UIScrollView" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E1E391E6207A5A0E00AB3908;
+			productRefGroup = E1E391F0207A5A0F00AB3908 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1E391EE207A5A0F00AB3908 /* Sample-UIScrollView */,
+				E1E39202207A5A0F00AB3908 /* Sample-UIScrollViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E1E391ED207A5A0F00AB3908 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1E391FD207A5A0F00AB3908 /* LaunchScreen.storyboard in Resources */,
+				E1E391FA207A5A0F00AB3908 /* Assets.xcassets in Resources */,
+				E1E391F8207A5A0F00AB3908 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1E39201207A5A0F00AB3908 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1E391EB207A5A0F00AB3908 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1E391F5207A5A0F00AB3908 /* ViewController.swift in Sources */,
+				E1E391F3207A5A0F00AB3908 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1E391FF207A5A0F00AB3908 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1E39208207A5A0F00AB3908 /* Sample_UIScrollViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E1E39205207A5A0F00AB3908 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1E391EE207A5A0F00AB3908 /* Sample-UIScrollView */;
+			targetProxy = E1E39204207A5A0F00AB3908 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E1E391F6207A5A0F00AB3908 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1E391F7207A5A0F00AB3908 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E1E391FB207A5A0F00AB3908 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1E391FC207A5A0F00AB3908 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E1E3920A207A5A0F00AB3908 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E1E3920B207A5A0F00AB3908 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1E3920D207A5A0F00AB3908 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9D8UR7H9D4;
+				INFOPLIST_FILE = "Sample-UIScrollView/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.takumi314.Sample-UIScrollView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E1E3920E207A5A0F00AB3908 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9D8UR7H9D4;
+				INFOPLIST_FILE = "Sample-UIScrollView/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.takumi314.Sample-UIScrollView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E1E39210207A5A0F00AB3908 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9D8UR7H9D4;
+				INFOPLIST_FILE = "Sample-UIScrollViewTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.takumi314.Sample-UIScrollViewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sample-UIScrollView.app/Sample-UIScrollView";
+			};
+			name = Debug;
+		};
+		E1E39211207A5A0F00AB3908 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9D8UR7H9D4;
+				INFOPLIST_FILE = "Sample-UIScrollViewTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.takumi314.Sample-UIScrollViewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sample-UIScrollView.app/Sample-UIScrollView";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E1E391EA207A5A0E00AB3908 /* Build configuration list for PBXProject "Sample-UIScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1E3920A207A5A0F00AB3908 /* Debug */,
+				E1E3920B207A5A0F00AB3908 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1E3920C207A5A0F00AB3908 /* Build configuration list for PBXNativeTarget "Sample-UIScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1E3920D207A5A0F00AB3908 /* Debug */,
+				E1E3920E207A5A0F00AB3908 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1E3920F207A5A0F00AB3908 /* Build configuration list for PBXNativeTarget "Sample-UIScrollViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1E39210207A5A0F00AB3908 /* Debug */,
+				E1E39211207A5A0F00AB3908 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E1E391E7207A5A0E00AB3908 /* Project object */;
+}
