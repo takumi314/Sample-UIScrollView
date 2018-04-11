@@ -13,6 +13,7 @@
 		E1E391FA207A5A0F00AB3908 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1E391F9207A5A0F00AB3908 /* Assets.xcassets */; };
 		E1E391FD207A5A0F00AB3908 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1E391FB207A5A0F00AB3908 /* LaunchScreen.storyboard */; };
 		E1E39208207A5A0F00AB3908 /* Sample_UIScrollViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E39207207A5A0F00AB3908 /* Sample_UIScrollViewTests.swift */; };
+		E1E39213207BD18A00AB3908 /* HorizontalScrollerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E39212207BD18A00AB3908 /* HorizontalScrollerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		E1E39203207A5A0F00AB3908 /* Sample-UIScrollViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sample-UIScrollViewTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1E39207207A5A0F00AB3908 /* Sample_UIScrollViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample_UIScrollViewTests.swift; sourceTree = "<group>"; };
 		E1E39209207A5A0F00AB3908 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1E39212207BD18A00AB3908 /* HorizontalScrollerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalScrollerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				E1E391F9207A5A0F00AB3908 /* Assets.xcassets */,
 				E1E391FB207A5A0F00AB3908 /* LaunchScreen.storyboard */,
 				E1E391FE207A5A0F00AB3908 /* Info.plist */,
+				E1E39212207BD18A00AB3908 /* HorizontalScrollerView.swift */,
 			);
 			path = "Sample-UIScrollView";
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 			files = (
 				E1E391F5207A5A0F00AB3908 /* ViewController.swift in Sources */,
 				E1E391F3207A5A0F00AB3908 /* AppDelegate.swift in Sources */,
+				E1E39213207BD18A00AB3908 /* HorizontalScrollerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
