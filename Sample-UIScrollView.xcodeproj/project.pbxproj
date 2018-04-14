@@ -16,7 +16,7 @@
 		E1E39213207BD18A00AB3908 /* HorizontalScrollerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E39212207BD18A00AB3908 /* HorizontalScrollerView.swift */; };
 		E1E7ABE92081E50200D683A5 /* UIGestureRecognizer+Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E7ABE82081E50200D683A5 /* UIGestureRecognizer+Closure.swift */; };
 		E1E7ABEB2081ED8300D683A5 /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E7ABEA2081ED8300D683A5 /* SampleViewController.swift */; };
-		E1E7ABED2081EDB000D683A5 /* SampleStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1E7ABEC2081EDB000D683A5 /* SampleStoryboard.storyboard */; };
+		E1E7ABED2081EDB000D683A5 /* SampleScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1E7ABEC2081EDB000D683A5 /* SampleScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,7 @@
 		E1E39212207BD18A00AB3908 /* HorizontalScrollerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalScrollerView.swift; sourceTree = "<group>"; };
 		E1E7ABE82081E50200D683A5 /* UIGestureRecognizer+Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIGestureRecognizer+Closure.swift"; sourceTree = "<group>"; };
 		E1E7ABEA2081ED8300D683A5 /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
-		E1E7ABEC2081EDB000D683A5 /* SampleStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SampleStoryboard.storyboard; sourceTree = "<group>"; };
+		E1E7ABEC2081EDB000D683A5 /* SampleScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SampleScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +94,7 @@
 				E1E39212207BD18A00AB3908 /* HorizontalScrollerView.swift */,
 				E1E7ABE82081E50200D683A5 /* UIGestureRecognizer+Closure.swift */,
 				E1E7ABEA2081ED8300D683A5 /* SampleViewController.swift */,
-				E1E7ABEC2081EDB000D683A5 /* SampleStoryboard.storyboard */,
+				E1E7ABEC2081EDB000D683A5 /* SampleScreen.storyboard */,
 			);
 			path = "Sample-UIScrollView";
 			sourceTree = "<group>";
@@ -194,7 +194,7 @@
 				E1E391FD207A5A0F00AB3908 /* LaunchScreen.storyboard in Resources */,
 				E1E391FA207A5A0F00AB3908 /* Assets.xcassets in Resources */,
 				E1E391F8207A5A0F00AB3908 /* Main.storyboard in Resources */,
-				E1E7ABED2081EDB000D683A5 /* SampleStoryboard.storyboard in Resources */,
+				E1E7ABED2081EDB000D683A5 /* SampleScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

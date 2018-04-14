@@ -17,9 +17,19 @@
                     <view key="view" contentMode="scaleToFill" id="FPv-5W-shU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0W8-TN-i4j" customClass="HorizontalScrollerView" customModule="Sample_UIScrollView" customModuleProvider="target">
+                                <rect key="frame" x="67" y="167" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="gx2-Jh-lan"/>
                     </view>
+                    <connections>
+                        <outlet property="canvasView" destination="0W8-TN-i4j" id="9Dt-rS-qvE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cnL-A0-yr8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
