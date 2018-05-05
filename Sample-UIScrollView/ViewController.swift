@@ -21,11 +21,16 @@ class ViewController: UIViewController {
     // Images
     let images: [String] = ["DSC07470", "DSC07471", "DSC07472"]
 
+    private enum ViewControllers {
+        static let Padding: CGFloat = 10
+        static let Dimensions: CGFloat = 100
+        static let Offset: CGFloat = 100
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let imageSize = UIImage(named: images[0])!.size
+        let imageSize = UIImage(named: images.first!)!.size
 
         // ページスクロールとするためにページ幅を合わせる
         scrollScreenWidth = UIScreen.main.bounds.size.width
