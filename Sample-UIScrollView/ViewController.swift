@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         let imageSize = UIImage(named: images[0])!.size
 
         // ページスクロールとするためにページ幅を合わせる
-        scrollScreenWidth = scrollView.frame.size.width
+        scrollScreenWidth = UIScreen.main.bounds.size.width
         scrollScreenHeight = scrollScreenWidth * imageSize.height / imageSize.width
 
         var valueX: CGFloat = 0.0
