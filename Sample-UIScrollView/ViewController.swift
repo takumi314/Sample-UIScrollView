@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let imageSize = UIImage(named: images[0])!.size
+        let imageSize = UIImage(named: images.first!)!.size
 
         // ページスクロールとするためにページ幅を合わせる
         scrollScreenWidth = UIScreen.main.bounds.size.width
