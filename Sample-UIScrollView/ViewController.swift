@@ -19,7 +19,8 @@ class ViewController: UIViewController {
     var scrollScreenWidth: CGFloat!
 
     // Images
-    let images: [String] = ["DSC07470", "DSC07471", "DSC07473"]
+    let images: [String] = ["DSC07470", "DSC07471", "DSC07472"]
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
