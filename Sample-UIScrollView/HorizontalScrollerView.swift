@@ -247,10 +247,9 @@ extension HorizontalScrollerView: UIScrollViewDelegate {
             // 左から順にコンテンツを配置する
             xValue += Controllers.Padding
             view.frame = CGRect(x: xValue,
-                              y: Controllers.Padding,
-                              width: canvasSize.width,
-                              height: canvasSize.height)
-
+                                y: Controllers.Padding,
+                                width: canvasSize.width,
+                                height: canvasSize.height)
             xValue += canvasSize.width + Controllers.Padding
 
             return view
