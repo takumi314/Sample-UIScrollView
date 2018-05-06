@@ -46,6 +46,9 @@ open class HorizontalScrollerView: UIView {
     private var contentViews = [UIView]()
     private var canvasSize = CGSize(width: Controllers.Dimensions, height: Controllers.Dimensions)
 
+    // 最新のOffsetを保持する
+    private var lastScrollerOffset = CGPoint(x: 0.0, y: 0.0)
+
     private var imageSize: (height: CGFloat, width: CGFloat) = ( 1.0, 1.0)
 
     // 縦横比  横 : 縦 = 1 : radio
@@ -91,13 +94,11 @@ open class HorizontalScrollerView: UIView {
 
         contentViews.forEach({ $0.removeFromSuperview() })
 
-        var xValue: CGFloat = 0.0
-
-        let content = dataSource.horizontalScrollerView(self, viewAt: 0)
+        let firstContent = dataSource.horizontalScrollerView(self, viewAt: 0)
 
         // 描画する各コンテンツのサイズを設定する
         canvasSize.width = self.bounds.width - 2 * Controllers.Padding
-        canvasSize.height = canvasSize.width * content.bounds.height / content.bounds.width - 2 * Controllers.Padding
+        canvasSize.height = canvasSize.width * firstContent.bounds.height / firstContent.bounds.width - 2 * Controllers.Padding
 
         let numberOfPages = dataSource.numberOfViewa(in: self)
 
@@ -105,12 +106,23 @@ open class HorizontalScrollerView: UIView {
         pageControl.numberOfPages = numberOfPages
         pageControl.updateCurrentPageDisplay()
 
-        contentViews = (0 ..< numberOfPages).map {
+        var contents = (0 ..< numberOfPages).map {
+            return dataSource.horizontalScrollerView(self, viewAt: $0)
+        }
+
+        // おまじない
+        let content = contents.last!
+        contents.removeLast()
+        contents.insert(content, at: 0)
+
+        var xValue: CGFloat = 0.0
+
+        self.contentViews = (0 ..< numberOfPages).map {
             (index: Int) -> UIView in
 
             // 左から順にコンテンツを配置する
             xValue += Controllers.Padding
-            let contentView = dataSource.horizontalScrollerView(self, viewAt: index)
+            let contentView = contents[index]
             contentView.frame = CGRect(x: xValue,
                                        y: Controllers.Padding,
                                        width: canvasSize.width,
@@ -121,10 +133,15 @@ open class HorizontalScrollerView: UIView {
             return contentView
         }
 
+        let scrollerWidth = scroller.bounds.width
         contentViews.forEach({ scroller.addSubview($0) })
 
         scroller.contentSize = CGSize(width: xValue, height: frame.size.height)
         scroller.insertSubview(pageControl, aboveSubview: contentViews.last!)
+
+        // 初期位置を設定
+        scroller.contentOffset = CGPoint(x: scrollerWidth, y: Controllers.Padding)
+        lastScrollerOffset = CGPoint(x: scrollerWidth, y: 0.0)
 
         pageControl.hidesForSinglePage = true
         pageControl.updateCurrentPageDisplay()
@@ -197,7 +214,63 @@ extension HorizontalScrollerView: UIScrollViewDelegate {
         }
     }
 
+    // called when scroll view grinds to a halt
+    public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let newScrollerOffset = scroller.contentOffset
+        let width = scrollView.bounds.width
+        let direction = Int((newScrollerOffset.x - lastScrollerOffset.x) / width)
+
+        // 右へスクロール
+        if direction > 0 {
+            print("一番左端のビューを右端へ移動")
+            let firstView = contentViews.first!
+            contentViews.removeFirst()
+            contentViews.insert(firstView, at: contentViews.count)
+        }
+        else if direction == 0 {
+            print("移動なし")
+            return;
+        }
+        // 左へスクロール
+        else {
+            print("一番右端のビューを左端へ移動")
+            let lastView = contentViews.last!
+            contentViews.removeLast()
+            contentViews.insert(lastView, at: 0)
+        }
+
+        var xValue: CGFloat = 0.0
+
+        self.contentViews = contentViews.map {
+            (view) -> UIView in
+
+            // 左から順にコンテンツを配置する
+            xValue += Controllers.Padding
+            view.frame = CGRect(x: xValue,
+                              y: Controllers.Padding,
+                              width: canvasSize.width,
+                              height: canvasSize.height)
+
+            xValue += canvasSize.width + Controllers.Padding
+
+            return view
+        }
+
+        scroller.contentOffset = CGPoint(x: width, y: Controllers.Padding)
+        lastScrollerOffset = CGPoint(x: width, y: 0.0)
+
+    }
+
     // MARK: - Private method
+
+    func scrollToDirection(_ step: CGFloat, animated: Bool) {
+        let width = UIScreen.main.bounds.width
+        let adjustScrollRect = CGRect(x: scroller.contentOffset.x - width * step,
+                                      y: scroller.contentOffset.y,
+                                      width: scroller.bounds.size.width,
+                                      height: scroller.bounds.size.height)
+        scroller.scrollRectToVisible(adjustScrollRect, animated: animated)
+    }
 
     private func page(on scrollView: UIScrollView) -> Int {
         let page = (scrollView.contentOffset.x + 1.0) / scrollView.bounds.width
